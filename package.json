@@ -1,0 +1,24 @@
+{
+  "name": "getdevicemedia",
+  "version": "1.0.0",
+  "description": "Easily get a MediaStream from any available capture device.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "standard --fix src/** && npm run test-browser",
+    "build": "browserify src/index.js -s getdevicemedia -o dist/getdevicemedia.js",
+    "test-browser": "zuul --local -- test/*.js"
+  },
+  "author": "Thomas Mullen",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
+  },
+  "dependencies": {
+    "enumerate-devices": "^1.1.1",
+    "getusermedia": "^2.0.1"
+  }
+}
