@@ -1,7 +1,7 @@
 {
   "name": "getdevicemedia",
   "version": "1.0.0",
-  "description": "Easily get a MediaStream from any available capture device.",
+  "description": "Easily get a MediaStream from any media device.",
   "main": "src/index.js",
   "directories": {
     "test": "test"

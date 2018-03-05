@@ -9,6 +9,7 @@ test('get all devices streams', function (t) {
     }
     t.plan(devices.length)
     devices.forEach(function (device) {
+      console.log(device)
       device.getStream(function (err, stream) {
         t.true(stream instanceof MediaStream, 'got MediaStream')
       })
