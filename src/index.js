@@ -1,7 +1,7 @@
 var getusermedia = require('getusermedia')
 var enumerateDevices = require('enumerate-devices')
 
-function getanymedia (callback) {
+function getdevicemedia (callback) {
   getusermedia({ audio: true, video: true }, function (err) { // "warm up" gum
     if (err) return callback(err, null)
 
@@ -32,4 +32,4 @@ function hasSubstring (str, substr) {
   return str.indexOf(substr) !== -1
 }
 
-module.exports = getanymedia
+module.exports = getdevicemedia
